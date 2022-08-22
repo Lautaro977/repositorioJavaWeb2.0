@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Aplicacion07Logs:war exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/Aplicacion07Logs_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Aplicacion07Logs" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="log4j-1.2.16" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.12-bin" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Aplicacion07Logs/web/Web" />
+    </root>
+  </artifact>
+</component>

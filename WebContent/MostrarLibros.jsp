@@ -14,7 +14,7 @@
 </head>
 <body>
 <form name="filtroCategoria">
-    <select name="categoria">
+    <select name="categoria">//NO ESTA TERMINADA VER DE LA PAGINA 117 A LA 120 DEL LIBRO
         <option value="seleccionar">seleccionar</option>
 
         <%
@@ -41,25 +41,24 @@
     if (request.getParameter("categoria") == null || request.getParameter("categoria").equals("seleccionar")) {
 
         listaDeLibros = Libro.buscarTodos();
+
     } else {
 
         listaDeLibros = Libro.buscarPorCategoria(request.getParameter("categoria"));
 
-
     }
     for (Libro libro : listaDeLibros) { %>
-
-<%=libro.getIsbn()%>
-<%=libro.getTitulo()%>
-<%=libro.getCategoria()%>
-<a href="BorrarLibro.jsp?isbn=<%=libro.getIsbn()%>">Borrar</a>
-<a href="FormularioEditarLibro.jsp?isbn=<%=libro.getIsbn()%>">Editar</a>
-<br/>
-
-
-<% }
-
+        <%=libro.getIsbn()%>
+        <%=libro.getTitulo()%>
+        <%=libro.getCategoria()%>
+        <a href="BorrarLibro.jsp?isbn=<%=libro.getIsbn()%>">Borrar</a>
+        <a href="FormularioEditarLibro.jsp?isbn=<%=libro.getIsbn()%>">Editar</a>
+        <br/>
+        <% }
 %>
 <a href="FormularioInsertarLibro.jsp">Insertar Libro</a>
 </body>
 </html>
+
+
+

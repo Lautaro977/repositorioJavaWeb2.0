@@ -2,7 +2,6 @@
 	pageEncoding="UTF-8"%>
 <%@page import="com.arquitecturajava.aplicacion.Libro"%>
 
-
 <% 
 
 String isbn= request.getParameter("isbn");

@@ -34,25 +34,19 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
 	
 
-List<String> listaDeCategorias=null;
-
-
-
-	
-
-	
+    List<String> listaDeCategorias=null;
 	listaDeCategorias=Libro.buscarTodasLasCategorias();
 	 
 	 for(String categoria:listaDeCategorias) {
 	 
-	 if (libro.getCategoria().equals(categoria)) { %>
+	     if (libro.getCategoria().equals(categoria)) { %>
 	 
-	 	   <option value="<%=categoria%>" selected="selected"><%=categoria%></option>
+	 	     <option value="<%=categoria%>" selected="selected"><%=categoria%></option>
 	 
-	 <%}else{ %>
-
-			   <option value="<%=categoria%>"><%=categoria%></option>
- 	<% }
+	     <%}
+	     else{%>
+	         <option value="<%=categoria%>"><%=categoria%></option>
+	     <%}
 	 } 
 
 	 %>

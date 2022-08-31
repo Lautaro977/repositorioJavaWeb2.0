@@ -10,9 +10,7 @@ import java.util.List;
 
 public class ControladorLibros extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    protected void doGet(HttpServletRequest request,
-                         HttpServletResponse response) throws
-            ServletException, IOException {
+    protected void doGet(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher despachador = null;
         List<Libro> listaDeLibros = Libro.buscarTodos();
         List<String> listaDeCategorias = Libro.buscarTodasLasCategorias();

@@ -9,6 +9,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="log4j-1.2.16" />
           <element id="library" level="project" name="mysql-connector-java-5.1.12-bin" />
+          <element id="file-copy" path="$USER_HOME$/Apache-tomcat7/apache-tomcat-7.0.32/lib/servlet-api.jar" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="Aplicacion07Logs/web/Web" />
